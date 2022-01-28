@@ -19,24 +19,20 @@ header {
     color: #fff;
     width: 100vw;
 }
-
 .logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 300;
     color: #fff;
 }
-
 .logo span {
     font-size: 30px;
     color: #d84315;
     font-weight: 700;
 }
-
 .menu {
     font-family: 'Montserrat', sans-serif;
 }
-
 .menu ul,
 .menu li {
     list-style: none;
@@ -45,7 +41,6 @@ header {
 .menu ul {
     display: flex;
 }
-
 .menu a {
     font-weight: 300;
     display: block;
@@ -62,4 +57,42 @@ header {
 }
 .menu a:last-child {
     margin-right: 0;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.banner-container {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.banner h1 span {
+    font-weight: 700;
+    color: #d84315;
+}
+
+.banner h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
 }

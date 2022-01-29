@@ -33,6 +33,9 @@ header {
 .menu {
     font-family: 'Montserrat', sans-serif;
 }
+.menu-bars {
+    display: none;
+}
 .menu ul,
 .menu li {
     list-style: none;
@@ -145,7 +148,6 @@ header {
     box-shadow: 1px 1px 8px #666;
 }
 .sobre--body {
-    height: 200px;
     width: 100%;
     padding: 50px;
     font-family: 'Open Sans', sans-serif;
@@ -287,4 +289,82 @@ footer {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+}
+
+@media (min-width: 426px) and (max-width: 900px) {
+    .sobre--img {
+        padding: 25px;
+    }
+    .sobre--img img {
+        max-width: 250px;
+    }
+
+    .sobre--body {
+        padding: 25px;
+    }
+    .sobre-content {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}
+
+@media (max-width: 425px) {
+    .banner-container {
+        padding: 20px;
+    }
+    
+    .banner h1 {
+        text-align: center;
+    }
+
+    .banner h2 {
+        font-size: 26px;
+    }
+
+    .sobre--img {
+        padding: 0x;
+    }
+    .sobre--img img {
+        max-width: 250px;
+    }
+
+    .sobre-content {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+    .sobre--body {
+        padding: 25px;
+    }
+
+    .portfolio-content--photo {
+        margin-top: 15px;
+    }
+
+    .servicos-item i {
+        font-size: 55px;
+    }
+    .servicos-item .servicos--title {
+        font-size: 20px;
+    }
+    .servicos-item .servicos--body {
+        font-size: 14pxx;
+    }
+    .menu-bars {
+        display: block;
+        font-size: 24px;
+    }
+    .menu nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        height: calc(100vh - 70px);
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 99;
+        width: 50vw;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu a {
+        margin: 15px;
+    }
 }

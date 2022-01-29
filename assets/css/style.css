@@ -165,7 +165,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
 }
 .portfolio-content--photo {
     width: 280px;
@@ -195,8 +194,97 @@ header {
 .portfolio-content--photoinfo h5 {
     font-size: 18px;
     font-weight: 600px;
+    font-family: 'Montserrat', sans-serif;
+}
+.portfolio-content--photoinfo p {
+    font-family: 'Open Sans', sans-serif;
 }
 .portfolio-content--photoarea:hover .portfolio-content--photoinfo {
     display: flex;
     transition: all 2s linear;
+}
+
+.servicos {
+    background-image: url('../images/bg2.jpg');
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.servicos-bg {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.servicos .section-title {
+    color: #fff;
+}
+.servicos .section-body {
+    color: #fff;
+}
+.servicos-content {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.servicos-item {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.servicos-item i {
+    font-size: 65px;
+    padding: 10px;
+    color: #d84315;
+}
+.servicos-item .servicos--title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    padding: 10px;
+}
+.servicos-item .servicos--body {
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contato {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgb(27, 27, 27);
+}
+.contato .section-title {
+    color: #fff;
+}
+.contato .section-body {
+    color: #fff;
+}
+.contato-content {
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contato-content a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }

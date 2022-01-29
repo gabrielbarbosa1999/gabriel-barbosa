@@ -85,6 +85,7 @@ header {
     font-size: 70px;
     font-weight: 300;
     color: #fff;
+    text-align: center;
 }
 
 .banner h1 span {
@@ -98,6 +99,7 @@ header {
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .container {
@@ -291,7 +293,7 @@ footer {
     color: #fff;
 }
 
-@media (min-width: 426px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 900px) {
     .sobre--img {
         padding: 25px;
     }
@@ -307,13 +309,45 @@ footer {
     }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 426px) and (max-width: 600px) {
+    .sobre--img {
+        padding: 25px;
+    }
+    .sobre--img img {
+        max-width: 250px;
+    }
+
+    .sobre--body {
+        padding: 25px;
+    }
+    .sobre-content {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+    .menu-bars {
+        display: block;
+        font-size: 24px;
+    }
+    .menu nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        height: calc(100vh - 70px);
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 99;
+        width: 50vw;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu a {
+        margin: 15px;
+    }
+}
+
+@media (min-width:321px) and (max-width: 425px) {
     .banner-container {
         padding: 20px;
-    }
-    
-    .banner h1 {
-        text-align: center;
     }
 
     .banner h2 {
@@ -366,5 +400,92 @@ footer {
     }
     .menu a {
         margin: 15px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    .logo span {
+        font-size: 25px;
+    }
+
+    .banner-container {
+        padding: 20px;
+    }
+    
+    .banner h1 {
+        font-size: 55px;
+    }
+
+    .banner h2 {
+        font-size: 23px;
+    }
+
+    .sobre--img {
+        padding: 0x;
+    }
+    .sobre--img img {
+        max-width: 250px;
+    }
+
+    .sobre-content {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+    .sobre--body {
+        padding: 30px;
+    }
+
+    .portfolio-content--photo {
+        margin-top: 15px;
+    }
+
+    .servicos-item i {
+        font-size: 55px;
+    }
+    .servicos-item .servicos--title {
+        font-size: 20px;
+    }
+    .servicos-item .servicos--body {
+        font-size: 14pxx;
+    }
+    .menu-bars {
+        display: block;
+        font-size: 24px;
+    }
+    .menu nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        height: calc(100vh - 70px);
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 99;
+        width: 50vw;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu a {
+        margin: 15px;
+    }
+
+    .contato-content {
+        font-size: 14px;
+    }
+    .contato-content a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+    }
+
+    footer {
+        font-size: 16px;
     }
 }

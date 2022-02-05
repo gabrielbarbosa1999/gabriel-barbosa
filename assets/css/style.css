@@ -328,14 +328,15 @@ footer {
         font-size: 24px;
     }
     .menu nav {
-        display: none;
+        display: flex;
         position: absolute;
         top: 70px;
         right: 0;
         height: calc(100vh - 70px);
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 99;
-        width: 50vw;
+        width: 0vw;
+        transition: all ease 0.5s;
     }
     .menu ul {
         flex-direction: column;
@@ -386,14 +387,15 @@ footer {
         font-size: 24px;
     }
     .menu nav {
-        display: none;
+        display: flex;
         position: absolute;
         top: 70px;
         right: 0;
         height: calc(100vh - 70px);
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 99;
-        width: 50vw;
+        width: 0vw;
+        transition: all ease 0.5s;
     }
     .menu ul {
         flex-direction: column;
@@ -457,14 +459,15 @@ footer {
         font-size: 24px;
     }
     .menu nav {
-        display: none;
+        display: flex;
         position: absolute;
         top: 70px;
         right: 0;
         height: calc(100vh - 70px);
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 99;
-        width: 50vw;
+        width: 0vw;
+        transition: all ease 0.5s;
     }
     .menu ul {
         flex-direction: column;

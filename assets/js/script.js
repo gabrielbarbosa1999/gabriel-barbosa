@@ -1,10 +1,14 @@
+function openMenu() {
+    let menu = document.querySelector('#menu-area');
+    let opener = document.querySelector('.fas');
 
-window.onload = function() {
-    document.querySelector(".menu-bars").addEventListener("click", function() {
-        if(document.querySelector(".menu nav").style.display == 'flex') {
-               document.querySelector(".menu nav").style.display = 'none'; 
-        } else {
-            document.querySelector(".menu nav").style.display = 'flex';
-        }
-    });
-};
+    if(menu.style.width == '50vh') {
+        menu.style.width = '0px';
+        opener.classList.add('fa-bars');
+        opener.classList.remove('fa-times');
+    } else {
+        menu.style.width = '50vh';
+        opener.classList.remove('fa-bars');
+        opener.classList.add('fa-times');
+    }
+}

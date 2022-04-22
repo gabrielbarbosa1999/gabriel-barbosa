@@ -28,6 +28,15 @@ function scrollToIdOnClick(event) {
 	event.preventDefault();
 	const to = getScrollTopByHref(event.currentTarget)- 80;
 	scrollToPosition(to);
+
+  let menu = document.querySelector('#menu-area');
+  let opener = document.querySelector('.fas');
+
+  if(menu.style.width == '50vw') {
+    menu.style.width = '0px';
+    opener.classList.add('fa-bars');
+    opener.classList.remove('fa-times');
+  }
 }
 
 menuItems.forEach(item => {

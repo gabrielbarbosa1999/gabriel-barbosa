@@ -194,6 +194,7 @@ header {
     align-items: center;
     color: #fff;
     transition: all 2s linear;
+    text-align: center;
 }
 .portfolio-content--photoinfo h5 {
     font-size: 18px;
